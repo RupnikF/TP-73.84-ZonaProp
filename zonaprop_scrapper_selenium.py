@@ -74,7 +74,7 @@ def scrape_zonaprop_v2():
         random_sleep()
 
         # Número de páginas a scrapear (ajustar según necesidad)
-        max_pages = 10
+        max_pages = 25
         page_number = 1
 
         while page_number < max_pages:
