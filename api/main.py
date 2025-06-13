@@ -1,4 +1,6 @@
 from contextlib import asynccontextmanager
+
+import numpy as np
 from fastapi import FastAPI, Request
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -6,9 +8,9 @@ import joblib
 from .preprocess import process_single_row
 
 # Rutas de los modelos (ajustar luego)
-SCALER_PATH = "minmaxscaler.joblib"
-ENCODER_PATH = "onehotencoder.joblib"
-MODEL_PATH = "randomforest.joblib"
+SCALER_PATH = "../models/minmaxscaler.joblib"
+ENCODER_PATH = "../models/onehotencoder.joblib"
+MODEL_PATH = "../models/best_random_forest_model.joblib"
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -61,4 +63,6 @@ def predict(req: PredictionRequest, request: Request):
     else:
         X = processed
     pred = model.predict(X)[0]
+    #Aplicar la inversa del log1p para obtener el valor original
+    pred = np.expm1(pred)
     return {"predicted_value": float(pred)}

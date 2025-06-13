@@ -142,9 +142,11 @@ def standarize_numeric_columns(data:pd.DataFrame):
 
 def standarize_numeric_columns_transform(data:pd.DataFrame, scaler:MinMaxScaler):
     columnas_salida = ['Cantidad_plantas', 'antiguedad', 'dormitorios', 'cocheras', 'baños',
-                       'ambientes', 'm2_totales', 'm2_cubiertos', 'expenses', 'price']
+                       'ambientes', 'm2_totales', 'm2_cubiertos', 'expenses']
     scaled_values = scaler.transform(data[columnas_salida])
     data[columnas_salida] = pd.DataFrame(scaled_values, columns=columnas_salida, index=data.index)
+    #Logaritmo en la variable objetivo 'price'
+    data['price'] = np.log1p(data['price'])
     return data
 
 # 14. Codificar variables categóricas
