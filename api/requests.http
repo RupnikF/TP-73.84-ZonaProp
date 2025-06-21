@@ -9,7 +9,7 @@ Content-Type: application/json
   "title": "Casa · 260m² · 6 ambientes · 3 cocheras",
   "rent_price": "USD 550.000",
   "expenses_price": "No disponible",
-  "location": "Laprida 300, Ituzaingó, GBA Oeste",
+  "location": "La Reserva Cardales, La Reserva Cardales, Campana",
   "icon-stotal": "1020 m² tot.",
   "icon-scubierta": "260 m² cub.",
   "icon-ambiente": "6 amb.",
@@ -30,22 +30,126 @@ POST http://localhost:8000/predict
 Content-Type: application/json
 
 {
-  "url": "https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-venta-departamento-3-amb-con-dependencia-y-patio-en-55140952.html",
-  "title": "Departamento · 82m² · 3 ambientes",
-  "rent_price": "USD 361.130",
+  "url": "https://www.zonaprop.com.ar/propiedades/clasificado/veclcana-venta-duplex-4-amb-a-estrenar-ituziango-norte-54394156.html?labs=5,AnnoyAPI_itemitem_RC=_UC=,20250607111912,ff6c6e44-a0bd-4079-b638-40992f5e666d&userid=0&itemid=53906347&labs_source=RECOMENDADOS_LISTADO_PROPIEDAD_PERSONALIZED_DESKTOP&labs_version=2",
+  "title": "Casa · 150m² · 4 ambientes · 2 cocheras",
+  "rent_price": "USD 270.000",
   "expenses_price": "No disponible",
-  "location": "Horacio Quiroga 4900, Altos del Sol, Villa Udaondo",
-  "icon-stotal": "110 m² tot.",
-  "icon-scubierta": "82 m² cub.",
+  "location": "Laprida , Ituzaingó Norte, Ituzaingó",
+  "icon-stotal": "250 m² tot.",
+  "icon-scubierta": "150 m² cub.",
+  "icon-ambiente": "4 amb.",
+  "icon-bano": "2 baños",
+  "icon-cochera": "2 coch.",
+  "icon-dormitorio": "3 dorm.",
+  "icon-toilete": "1 toilette",
+  "icon-antiguedad": "A estrenar",
+  "general_features": "; ; ; ",
+  "icon-disposicion": null,
+  "icon-orientacion": null,
+  "icon-luminosidad": "Muy luminoso",
+  "icon-inmueble": null,
+  "features": null
+}
+
+###
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+  "url": "https://www.zonaprop.com.ar/propiedades/clasificado/veclcana-venta-casa-5-ambientes-ituzaingo-56135802.html?labs=18,I-27-i-i-removeTipoCategoria,20250607120645,1d9160ca-0a8f-4260-8fdd-f7408f40eb3d&userid=0&itemid=47748763&labs_source=RECOMENDADOS_LISTADO_PROPIEDAD_PERSONALIZED_DESKTOP&labs_version=2",
+  "title": "Casa · 154m² · 5 ambientes · 1 cochera",
+  "rent_price": "USD 215.000",
+  "expenses_price": "No disponible",
+  "location": "Medina 345, Ituzaingó Norte, Ituzaingó",
+  "icon-stotal": "390 m² tot.",
+  "icon-scubierta": "154 m² cub.",
+  "icon-ambiente": "5 amb.",
+  "icon-bano": null,
+  "icon-cochera": "1 coch.",
+  "icon-dormitorio": "4 dorm.",
+  "icon-toilete": "2 toilettes",
+  "icon-antiguedad": "A estrenar",
+  "general_features": "; ; ; ; ",
+  "icon-disposicion": null,
+  "icon-orientacion": null,
+  "icon-luminosidad": null,
+  "icon-inmueble": null,
+  "features": null
+}
+
+###
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+  "url": "https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-departamento-3-ambientes-tipo-duplex-55115398.html",
+  "title": "Departamento · 115m² · 3 ambientes",
+  "rent_price": "USD 195.000",
+  "expenses_price": "Expensas $ 316.000",
+  "location": "Sarmiento al 4300, Almagro, Capital Federal",
+  "icon-stotal": "150 m² tot.",
+  "icon-scubierta": "115 m² cub.",
   "icon-ambiente": "3 amb.",
   "icon-bano": "2 baños",
   "icon-cochera": null,
   "icon-dormitorio": "2 dorm.",
+  "icon-toilete": "2 toilettes",
+  "icon-antiguedad": "60 años",
+  "general_features": "; ; ; ",
+  "icon-disposicion": "Frente",
+  "icon-orientacion": null,
+  "icon-luminosidad": null,
+  "icon-inmueble": null,
+  "features": null
+}
+
+###
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+  "url": "https://www.zonaprop.com.ar/propiedades/clasificado/veclcana-casa-en-venta-4-ambientes-barrio-cerrado-altos-del-sol-54931648.html?labs=2,I-27-i-i-removeTipoCategoria,20250607100156,9c3deed6-a3fb-481a-af13-24c0c0726999&userid=0&itemid=56129474&labs_source=RECOMENDADOS_LISTADO_PROPIEDAD_PERSONALIZED_DESKTOP&labs_version=2",
+  "title": "Casa · 132m² · 4 ambientes",
+  "rent_price": "USD 245.000",
+  "expenses_price": "No disponible",
+  "location": "Horacio Quiroga 4900, Altos del Sol, Villa Udaondo",
+  "icon-stotal": "196 m² tot.",
+  "icon-scubierta": "132 m² cub.",
+  "icon-ambiente": "4 amb.",
+  "icon-bano": "2 baños",
+  "icon-cochera": null,
+  "icon-dormitorio": "3 dorm.",
+  "icon-toilete": "1 toilette",
+  "icon-antiguedad": "15 años",
+  "general_features": "; ; ; ; ; ; ; ",
+  "icon-disposicion": null,
+  "icon-orientacion": "N",
+  "icon-luminosidad": "Muy luminoso",
+  "icon-inmueble": null,
+  "features": null
+}
+
+###
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+  "url": "https://www.zonaprop.com.ar/propiedades/clasificado/veclcana-ituzaingo-norte-i-casa-3-ambientes-a-estrenar-55941981.html?labs=5,AnnoyAPI_itemitem_RC=_UC=,20250607123821,ab80f5f6-aa21-46d1-83f4-ed05a6d79c30&userid=0&itemid=56224525&labs_source=RECOMENDADOS_LISTADO_PROPIEDAD_PERSONALIZED_DESKTOP&labs_version=2",
+  "title": "Casa · 90m² · 3 ambientes · 1 cochera",
+  "rent_price": "USD 140.000",
+  "expenses_price": "No disponible",
+  "location": "Jose Maria Paz 1530, Ituzaingó Norte, Ituzaingó",
+  "icon-stotal": "320 m² tot.",
+  "icon-scubierta": "90 m² cub.",
+  "icon-ambiente": "3 amb.",
+  "icon-bano": "2 baños",
+  "icon-cochera": "1 coch.",
+  "icon-dormitorio": "2 dorm.",
   "icon-toilete": "1 toilette",
   "icon-antiguedad": "A estrenar",
-  "general_features": "Cantidad plantas : 1; Gimnasio; Parrilla; Pileta; Solarium; Superficie Semicubierta (m²) : 5",
-  "icon-disposicion": "Frente",
-  "icon-orientacion": "O",
+  "general_features": "; ; ; ; ; ; ",
+  "icon-disposicion": null,
+  "icon-orientacion": "E",
   "icon-luminosidad": "Muy luminoso",
   "icon-inmueble": null,
   "features": null

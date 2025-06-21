@@ -12,10 +12,11 @@ def obtener_clase(valor):
         return None
     return valor.split('·')[0].strip()
 
-# 4. Procesar geocodificación
+# 4. Procesar geocodificación1
 def geocodear(direccion):
     try:
-        ubicacion = geolocator.geocode(direccion + ', Argentina')
+        dir = str(direccion[0]) + ', Argentina'
+        ubicacion = geolocator.geocode(dir)
         if ubicacion:
             print(f'{ubicacion.latitude}, {ubicacion.longitude}')
             return ubicacion.latitude, ubicacion.longitude
