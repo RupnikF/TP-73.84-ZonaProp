@@ -1,7 +1,6 @@
 undetected_chromedriver~=3.5.5
 selenium~=4.32.0
 pandas~=2.2.3
-playwright~=1.52.0
 numpy~=2.2.5
 scikit-learn~=1.5.2
 lightgbm~=4.6.0
@@ -12,3 +11,4 @@ fastapi~=0.115.12
 pydantic~=2.11.6
 folium~=0.19.7
 geopy~=2.4.1
+uvicorn~=0.34.3

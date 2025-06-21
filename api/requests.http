@@ -1,0 +1,52 @@
+GET http://localhost:8000
+
+###
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+  "url": "https://www.zonaprop.com.ar/propiedades/clasificado/veclcain-casa-de-6-ambientes-en-venta-y-alquiler-en-la-reserva-54229746.html",
+  "title": "Casa · 260m² · 6 ambientes · 3 cocheras",
+  "rent_price": "USD 550.000",
+  "expenses_price": "No disponible",
+  "location": "Laprida 300, Ituzaingó, GBA Oeste",
+  "icon-stotal": "1020 m² tot.",
+  "icon-scubierta": "260 m² cub.",
+  "icon-ambiente": "6 amb.",
+  "icon-bano": "5 baños",
+  "icon-cochera": "3 coch.",
+  "icon-dormitorio": "3 dorm.",
+  "icon-toilete": "1 toilette",
+  "icon-antiguedad": "A estrenar",
+  "general_features": "Apto crédito; Cantidad plantas : 2; Cobertura cochera : Cubierta; Frente del terreno (mts) : 0; Largo del terreno (mts) : 0; Parrilla; Pileta; Superficie Semicubierta (m²) : 70",
+  "icon-disposicion": null,
+  "icon-orientacion": null,
+  "icon-luminosidad": null,
+  "icon-inmueble": null,
+  "features": null
+}
+###
+POST http://localhost:8000/predict
+Content-Type: application/json
+
+{
+  "url": "https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-venta-departamento-3-amb-con-dependencia-y-patio-en-55140952.html",
+  "title": "Departamento · 82m² · 3 ambientes",
+  "rent_price": "USD 361.130",
+  "expenses_price": "No disponible",
+  "location": "Horacio Quiroga 4900, Altos del Sol, Villa Udaondo",
+  "icon-stotal": "110 m² tot.",
+  "icon-scubierta": "82 m² cub.",
+  "icon-ambiente": "3 amb.",
+  "icon-bano": "2 baños",
+  "icon-cochera": null,
+  "icon-dormitorio": "2 dorm.",
+  "icon-toilete": "1 toilette",
+  "icon-antiguedad": "A estrenar",
+  "general_features": "Cantidad plantas : 1; Gimnasio; Parrilla; Pileta; Solarium; Superficie Semicubierta (m²) : 5",
+  "icon-disposicion": "Frente",
+  "icon-orientacion": "O",
+  "icon-luminosidad": "Muy luminoso",
+  "icon-inmueble": null,
+  "features": null
+}
